@@ -1,6 +1,7 @@
 """python functions for reading and writing files"""
 
 import numpy as np
+import os
 import scipy
 from PIL import Image
 from os.path import join as pjoin
@@ -9,7 +10,7 @@ import pandas as pd
 import h5py as h5
 from io import StringIO
 from .paths import LS, precede
-from .utils import concat_np
+from .utils import concat_np, first_unique
 
 def rtsv(path, f=0):
     """

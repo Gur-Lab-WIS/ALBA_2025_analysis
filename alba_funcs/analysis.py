@@ -8,9 +8,9 @@ from scipy.ndimage import gaussian_filter as gfilt
 from scipy.optimize import curve_fit
 from scipy.signal import find_peaks
 from scipy.stats import linregress, pearsonr, spearmanr
-from .io import rtsv, read_roi, wtsv
+from .io import rtsv, read_roi, wtsv, tomo_energy
 from .paths import pjoin, precede
-from .utils import btwn, strsplit
+from .utils import btwn, strsplit, first_unique
 
 def qnorm(data):
     """

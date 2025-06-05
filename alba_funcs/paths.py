@@ -4,6 +4,7 @@ import os
 from os.path import join as pjoin
 import numpy as np
 from .utils import list_concat
+from pathlib import Path
 
 def LS(path, dirs : bool=False, dpath : bool=False):
     """
