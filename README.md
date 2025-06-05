@@ -1,5 +1,5 @@
 # alba_funcs
-This is the python package containing the functions and imports necessary for the analysis in the paper.
+This is the python package containing the functions and imports necessary for the analysis in the paper "pH Variations Enable Guanine Crystal Formation within Iridosomes".
 
 ## analysis.py
 Functions related to the signal analysis and manipulation.
@@ -33,6 +33,12 @@ Aggregated data collected from roi.txt files for analysis. Includes energies, ab
 
 ## nqd{date}.csv
 Manually annotated list of roi.txt files, indicating if the original is flipped (negative value), irrelevant (0) or too noisy (2).
+
+## mosaic_stacks.npz
+saved stacks from mosaic energy scans, for the mosaic analysis
+
+## mosaic_roi_df.json
+df of the roi absorption data for the mosaic analysis
 
 # figures
 Some of the figures as produced from the notebook
@@ -86,6 +92,7 @@ REWRITE_DF = False
 LOAD_DF = True
 LOAD_ROIS = True
 REWRITE_ROIS = False
+REWRITE_MOSAIC = False
 ```
     with this configuration, the existing aggregated data files are loaded and used, and no new files are saved.
     6. you may run the whole notebook, cell by cell or simply survey the code. 
