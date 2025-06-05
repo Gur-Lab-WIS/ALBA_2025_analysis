@@ -14,7 +14,7 @@ Several python functions that create and run imageJ macros to view and manipulat
 Functions for manipulating and querying paths.
 
 ## plotting.py
-Funcions for plotting, one for plotting data colored by a sequence of values, and one for plotting an image stack.
+A function for plotting data colored by a sequence of values.
 
 ## utils.py
 Functions for general use.
