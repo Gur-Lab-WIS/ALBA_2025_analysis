@@ -8,7 +8,6 @@ setup(
     description = 'analysis of XANES data of guanine acquired in ALBA 2022-2023',
     lab = 'dvir gur',
     install_requires = [
-        'python_version>=3.9',
         'h5py==3.11.0',
         'matplotlib==3.9.2',
         'more_itertools==10.5.0',
@@ -21,6 +20,7 @@ setup(
         'scipy==1.14.1',
         'seaborn==0.13.2',
         'tqdm==4.66.5',
-    ]
+    ],
+    python_requires = '>=3.9',
     packages=find_packages(),
 )
